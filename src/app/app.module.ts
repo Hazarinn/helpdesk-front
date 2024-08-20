@@ -8,6 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Para trabalhar com formulários no angular 12
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxMaskModule } from 'ngx-mask';
+
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -78,7 +81,10 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
       timeOut: 4000,
       closeButton: true,
       progressBar: true,
-})
+}),
+
+NgxMaskModule.forRoot()
+   
   ],
   providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
