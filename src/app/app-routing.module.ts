@@ -8,6 +8,9 @@ import { AuthGuard } from './auth/auth.guard';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -18,7 +21,13 @@ const routes: Routes = [
     {path: 'tecnicos', component: TecnicosListComponent},
     {path: 'tecnicos/create', component: TecnicoCreateComponent},
     {path: 'tecnicos/update/:id', component: TecnicoUpdateComponent},
-    {path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent}
+    {path: 'tecnicos/delete/:id', component: TecnicoDeleteComponent},
+
+    {path:'home', component: HomeComponent},
+    {path: 'clientes', component: ClienteListComponent},
+    {path: 'clientes/create', component:  ClienteListComponent},
+    {path: 'clientes/update/:id', component:  ClienteUpdateComponent},
+    {path: 'clientes/delete/:id', component: ClienteDeleteComponent}
   ]
   }
 ];
