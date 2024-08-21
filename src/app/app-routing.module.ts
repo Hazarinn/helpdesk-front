@@ -26,8 +26,8 @@ const routes: Routes = [
 
     {path:'home',                 component: HomeComponent},
     {path: 'clientes',            component: ClienteListComponent},
-    {path: 'clientes/create',     component:  ClienteListComponent},
-    {path: 'clientes/update/:id', component:  ClienteUpdateComponent},
+    {path: 'clientes/create',     component: ClienteListComponent},
+    {path: 'clientes/update/:id', component: ClienteUpdateComponent},
     {path: 'clientes/delete/:id', component: ClienteDeleteComponent},
 
 
