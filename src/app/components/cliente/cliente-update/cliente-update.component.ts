@@ -81,6 +81,8 @@ export class ClienteUpdateComponent implements OnInit {
     && this.email.valid && this.senha.valid
   }
 
+  
+
 }
 
 
